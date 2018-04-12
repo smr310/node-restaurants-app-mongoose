@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: C6DwA5O/A9mibQMgMICjA9oFRvi/MWBWGw++wQfq7CDEgRejliowXMXtBB/XH3HkqpNxKwgvLiK8AVToL5VMcOMsg3997D3V9LpmpsawimkMMLuQxdQWF/5WzDgKILx6FwDb9ANmFKLHoT9exvnJiUYJtjTeF1eZBMm6OeD2O0rAXQSaPd49WRxEdqTJy//eg6Pn+RSbbSZtH35Oo3TFEzij7BR2rHow+OUQC+ysij622Ng8SiY+bk4Hy3bbVevaBjJp5PRS9c0RKGC4gvG+VTFSeGNjI+ifMP++F8zOR4UzdahEGtbFT769FXm51M/yvsemRDQTgEP04ao7elkOdZylN6i5bVsS///tL6rnVnFKpjFmI1cbEb+QkOeB9ZPmKWcsJ+hJvDIjkpFfmQzTkCMj5fR8IwPVh03FiueYKNrwd4qucigOmxgg3rHahwYaL+Gj9K1xuo3FYvw9CHCCtuUgGO9JfiPtZqRr53Yom2vPbrUzZzW3xDDq6flBpvjv/hZ1ntxYTQD2ftSEAiM4y9WCUAIeXYW+quIfdSA5ybHS1k2NrhsgfBpvp1zgoUQs2wpeyXuTclWQqq9969SK1GInHEBiJf3u0YwMmr1Uw/eGQHFkd2fc3b9oZzuByY0NkXU74fu+5OAT/P/YUETL7AcyqqmPl/22U6I9zJmAIjk=
+  app: aqueous-castle-93589
+  on:
+    repo: smr310/node-restaurants-app-mongoose
+    branch: feature/with-tests
